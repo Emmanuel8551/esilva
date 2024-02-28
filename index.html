@@ -9,11 +9,13 @@
     <header class="main-header">
         <h1>Emmanuel Silva Santisteban</h1>
         <img class="circular-square" src = "img/faceshot.jpg" width = "100px"/>
-        <p><strong>Informatics engineer specialized in Gameplay Programming and UI creation</strong></p>
+        <h2>Informatics Engineering Student</h2>
+        <p class="short-description">I'm game programmer focused in systems and gameplay programming using the Unity Game Engine</p>
         <p>
             Here's my <a href="./resume.pdf" target = "_blank">Resume</a>!
         </p>
         
+        <!--
         <nav>
             <a href="#">Welcome</a>
             <a href="#">Gamedev Portfolio</a>
@@ -21,27 +23,25 @@
             <a href="#">Other Experiences</a>
             <a href="#">About me</a>
         </nav>
+        -->
+
     </header>
     
     <h2>Projects</h2>
     <article class="game-project">
         <h3>Dron2990 - Lead Programmer</h3>
         <img class="rounded-edges" src="img/Dron2990Banner.png" alt="Dron2990 Banner" width="200px"/>
-        <p>Cooperative shoot them up ships with construction mechanics</p>
+        <p class ="project-description">Game developed for the <strong>Game Jam Plus 22/23</strong> using the <strong>Unity Game Engine</strong></p>
         <p><strong>Team Size:</strong> 7</p>
         <p><strong>Project Lenght:</strong> 1 year</p>
         <strong>Contribution</strong>
         <ul>
-            <li>Lead Programmer</li>
-            <li>Created the Game Editor including</li>
-            <ul>
-                <li>Level Creator</li>
-                <li>Boss Creator</li>
-                <li>Bullet Creator</li>
-                <li>Implemented Enemy Creator</li>
-            </ul>
+            <li>Created an editor window to implement the level, enemy and bullet creators</li>
+            <ul><li>This feature empowered team members to create content in the game regardless of knowing the low level machinery</li></ul>
+            <li>Implemented an spline creator to develop the paths followed by enemy waves</li>
+            <ul><li>Also added visual cues in the editor for game designers to use</li></ul>
         </ul>
-        <a href="https://mewpher.itch.io/dron2990"><img src="img/Itchio_Icon.svg"></a>
+        <a href="https://mewpher.itch.io/dron2990" target = "_blank"><img src="img/Itchio_Icon.svg"></a>
     </article>
 
     <article class="game-project">
@@ -49,70 +49,89 @@
             <h3>Serious Robrt - Lead Programmer</h3>
             <img class="rounded-edges" src="img/SeriousRobrtBanner.png" alt="Serious Robrt Banner" width="200px"/>
         </header>
-        <p>Game developed for the Global Game Jam 2024</p>
+        <p class="project-description">Game developed for the <strong>Global Game Jam 2024</strong> using the <strong>Unity Game Engine</strong></p>
         <p><strong>Team Size:</strong> 7</p>
         <p><strong>Project Lenght:</strong> 1 Month</p>
         <strong>Contribution</strong>
         <ul>
-            <li>Lead Programmer</li>
-            <li>Implemented cards animation using a tweening machine</li>
-            <li>Implemented the core Gameplay Mechanics</li>
+            <li>Used the DOTween library to implement cards animations</li>
+            <li>Implemented a dialog system for the Robot to communicate with the user</li>
+            <li>Stored cards' data through Scriptable objects</li>
+            <li>Controlled the game flux using an state machine. Some relevant states are:</li>
             <ul>
-                <li>Cards functionality</li>
-                <li>Robert Dialog system</li>
-                <li>Overall flux of the gameplay</li>
+                <li>Pick Phase, The player picks his initial cards</li>
+                <li>Tutorial State, Robert explains the rules of the game</li>
+                <li>Resolution State, Robert shows the result of using a choosen card against the current game situtation</li>
             </ul>
+            
         </ul>
-        <a href="https://mewpher.itch.io/serious-robrt"><img src="img/Itchio_Icon.svg"></a>
+        <a href="https://mewpher.itch.io/serious-robrt" target = "_blank"><img src="img/Itchio_Icon.svg"></a>
     </article>
 
     <article class="game-project" >
         <h3>Extraterrarium - Gameplay Programmer</h3>
         <img class="rounded-edges" src="img/ExtraterrariumBanner.png" alt="Extraterrarium Banner" width="200px"/>
-        <p>Game developed for the Game Jam Plus 23/24</p>
+        <p class="project-description">Game developed for the <strong>Game Jam Plus 23/24</strong> using the <strong>Unity Game Engine</strong></p>
         <p><strong>Team Size:</strong> 8</p>
         <p><strong>Project Lenght:</strong> 1 Month</p>
         <strong>Contribution</strong>
         <ul>
-            <li>Created the enemy fish player's following and patrolling</li>
-            <li>Implemented Geiser's behvaiour and pushing objects away</li>
-            <li>Implemented Tentacle's behaviout and hitting player</li>
-            <li>Implemented cinematics player skipping and transitions</li>
+            <li>Created steering behaviours to control the fish enemies</li>
+            <li>Implemented a complex area of effect for the geiser using the physics raycasting interface</li>
+            <li>Created the tilemaps used for creating the level through the Unity tilemap creator</li>
         </ul>
-        <a href="https://adri888.itch.io/extraterrarium"><img src="img/Itchio_Icon.svg"></a>
+        <a href="https://adri888.itch.io/extraterrarium" target = "_blank"><img src="img/Itchio_Icon.svg"></a>
     </article>
 
-    <article class="game-project">
-        <h3>Unnamed Project - Unity Developer</h3>
-        <p>Application to improve reading comprehension on college students</p>
+    <article class="game-project"> 
+        <h3>University Investigation Project - Programming Intern</h3>
+        <p class="project-description">App focused on improving college students' reading comprehension, developed using the <strong>Unity Game Engine</strong></p>
         <p><strong>Team Size:</strong> 11</p>
         <p><strong>Project Lenght:</strong> 6 Months</p>
         <strong>Contribution</strong>
         <ul>
-            <li>Developed prototypes to test modules functionality</li>
-            <li>Implemented Learning module</li>
-            <li>Implemented Note taking module</li>
+            <li>Developed functiontal prototypes for many app features/li>
+            <li>Implemented an state machine to control the flow between the different views</li>
+            <ul>
+                <li>This feature facilitated the implementation of newly created views</li>
+            </ul>
+            <li>Developed the mind map creator for the note-taking module using Unity's event system.</li>
+            <ul>
+                <li>Developed save and load system using the Newtonsfot JsonConverter for the user mind maps</li>
+            </ul>
         </ul>
     </article>
     
     <article class="stats" >
-        <h2>Stats</h2>
+        <h2>Skills and Stats</h2>
         <ul>
-            <li>3 years of experience with Unity C#</li>
-            <li>1 year of experience with Git and Github</li>
-            <li>3 years of experience using C/C++</li>
+            <li>Experience leading and working with teams</li>
+            <li>3 years of experience with <strong>Unity C#</strong></li>
+            <li>1 year of experience with <strong>Git</strong> and <strong>Github</strong></li>
+            <li>3 years of experience using <strong>C/C++</strong></li>
+            <li>Experience working with <strong>HLSL in Unity</strong></li>
+            <li>Experience using Javascript, CSS, and HTML5.</li>
+            <li>Experience programming with Ruby, Lua and Java</li>
             <li>Participated in 5 industry events as a volunteer and mentor</li>
-            <li>7 projects completed</li>
+            <li>6 projects completed</li>
         </ul>
     </article>
 
     <article class="about-me">
         <h2>About me</h2>
         <p>
-            Student enrolled in an Informatics Engineering Degree at PUCP.
+            Skilled programmer and a passionate for game development, currently
+            in my last years of University with a focus on indie dev projects with
+            a group of friends while working on an investigation project alongside
+            my studies.
+        </p>
+        <p>
+            I am deeply interested in learning more about game devlopment
+            and aspiring to get into a renowned game studio. I want to learn how
+            complex game systems are managed within larger companies
         </p>
         
-        <h3>Videogames!</h3>
+        <h3>Videogames I like!</h3>
         <ul>
             <li>Dota 2</li>
             <li>Persona Series</li>
@@ -126,14 +145,17 @@
             <li>Data Structures and Algorithms</li>
             <li>Introduction to AI</li>
             <li>Videogame Production</li>
+            <li>Databases</li>
+            <li>Distributed Programming</li>
+            <li>Object Oriented Programming</li>
         </ul>
 
         <h3>Contact</h3>
         <strong>Email</strong>
         <p>a20190702@pucp.edu.pe</p>
         <article class="social-links">
-            <a href="https://manuelcsm.itch.io/"><img src="img/Itchio_Icon.svg"></a>
-            <a href="https://www.linkedin.com/in/emmanuel-silva-santisteban-amesquita/"><img src="img/linkedin.svg" alt=""></a>
+            <a href="https://manuelcsm.itch.io/" target = "_blank"><img src="img/Itchio_Icon.svg"></a>
+            <a href="https://www.linkedin.com/in/emmanuel-silva-santisteban-amesquita/" target = "_blank"><img src="img/linkedin.svg" alt=""></a>
         </article>
     </article>
     

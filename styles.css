@@ -26,10 +26,6 @@ footer {
     border-radius: 10px;
 }
 
-.game-project ul {
-    list-style: disc;
-}
-
 article a:link img {
     width: 40px;
     height: 40px;
@@ -49,3 +45,19 @@ article a:link img {
     width: 200px;
 }
 
+article p {
+    text-align: justify;
+}
+
+.project-description {
+    color: #666;
+}
+
+header h2 {
+    color: #000;
+}
+
+.short-description {
+    margin: auto;
+    max-width: 500px;
+}
